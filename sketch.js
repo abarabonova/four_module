@@ -14,6 +14,7 @@ function draw() {
   let moveSun6 = map(mouseX, 0, 400, 200, 1200);
   let moveSun7 = map(mouseY, 0, 350, 1000, 0);
   let moveSun8 = map(mouseX, 400, width, 0, 600);
+  let moveSun10 = map(mouseX, 0, width, 0, width);
 
   let moveSunWhite = map(mouseX, 0, width, width, 0);
   let moveSun1White = map(-mouseX, 0, 300, width, 200);
@@ -142,10 +143,29 @@ function draw() {
   ellipse(moveSun6 + 50, 700, 190);
 
   ellipse(moveSun7, 100, 290);
-  ellipse(moveSun7, 700, 190);
+  ellipse(moveSun7, 1700, 190);
 
   ellipse(moveSun7, 200, 190);
   ellipse(moveSun7 - 30, 1000, 400);
+
+  //
+  fill('##002376');
+  ellipse(moveSun10 - 200, width, 590);
+  ellipse(moveSun10 + 100, 800, 90);
+
+  ellipse(moveSun10 + 300, 1100, 290);
+  ellipse(moveSun10 + 50, 1700, 190);
+
+
+  //
+  ellipse(moveSun10 + 300, 1100, 290);
+  ellipse(moveSun10 + 50, 1300, 190);
+
+  ellipse(moveSun10, 1500, 290);
+  ellipse(moveSun10, 1000, 190);
+
+  ellipse(moveSun10, 1200, 190);
+  ellipse(moveSun10 - 300, 1000, 400);
 
   //
   fill('#F55D58');
