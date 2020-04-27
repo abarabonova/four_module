@@ -7,7 +7,8 @@
 }
 
 body{
-  overflow-y: hidden;
+  overflow: hidden;
+  background-color: #1f1f1f;
 }
 
 h1{
@@ -16,8 +17,79 @@ h1{
   font-size: 30vh;
   line-height: 76.19%;
   position: absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
+  bottom: 2vh;
+  right: 0;
+  /* transform:translate(-50%,-50%); */
   text-transform: uppercase;
 }
+
+
+#sidebar {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background: #1f1f1f;
+  left: -250px;
+  transition: 0.3s;
+}
+
+
+#sidebar.active {
+  left: 0px;
+}
+
+#sidebar ul li{
+  font-family: sans-serif;
+  width: 90%;
+  margin-left: 10%;
+  font-size: 2em;
+  padding: 15px 10px;
+}
+
+#sidebar ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#sidebar ul li a:hover {
+  color: #F55D58;
+}
+
+.toggle-btn {
+  position: absolute;
+  left: 270px;
+  top: 20px;
+  background: #1f1f1f;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+
+.toggle-btn span {
+  display: block;
+  width: 25px;
+  height: 4px;
+  background-color: #666;
+  margin: 4px 0;
+}
+
+.toggle-btn:hover {
+  background-color: #fff;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
