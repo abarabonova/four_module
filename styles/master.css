@@ -1,0 +1,23 @@
+@import "reset.css";
+
+@font-face {
+  font-family: "Pomidor";
+  font-weight: regular;
+  src: url(../Pomidor.otf) format('truetype');
+}
+
+body{
+  overflow-y: hidden;
+}
+
+h1{
+  color: #F3BF10;
+  font-family: "Pomidor";
+  font-size: 30vh;
+  line-height: 76.19%;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-transform: uppercase;
+}
