@@ -1,10 +1,12 @@
 function setup() {
   createCanvas(windowWidth, windowHeight);
+    // background('#F7C9C9');
 }
 
 function draw() {
   fill('#002376');
   noStroke();
+    background('#F7C9C9');
   let moveSun = map(mouseX, 0, width, width, 0);
   let moveSun1 = map(mouseX, 0, 300, width, 0);
   let moveSun2 = map(mouseY, 0, height, 0, width);
@@ -25,7 +27,7 @@ function draw() {
   let moveSun6White = map(-mouseX, 100, 400, 200, 1200);
   let moveSun7White = map(mouseY, 0, 350, 1000, 600);
   let moveSun8White = map(-mouseX, 400, width, 0, 400);
-  background('#F7C9C9');
+
   ellipse(moveSun, 0, 190);
 
   ellipse(moveSun, 800, 190);
@@ -148,8 +150,13 @@ function draw() {
   ellipse(moveSun7, 200, 190);
   ellipse(moveSun7 - 30, 1000, 400);
 
+  // 
+  // textAlign(CENTER, BASELINE);
+  // textSize(60);
+  // text('SEND HELP', 50,50);
+
   //
-  fill('##002376');
+  fill('#002376');
   ellipse(moveSun10 - 200, width, 590);
   ellipse(moveSun10 + 100, 800, 90);
 
@@ -221,12 +228,14 @@ function draw() {
 
   ellipse(moveSun4White, 200, 190);
   ellipse(moveSun4White, 1000, 400);
-  // text('send   help', width / 2, height / 2);
-
-
-
 
 }
+
+function mousePressed() {
+  ellipse(mouseX, mouseY, 190, 190);
+}
+
+
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
