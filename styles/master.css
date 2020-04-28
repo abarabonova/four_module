@@ -24,7 +24,6 @@ h1{
   text-transform: uppercase;
 }
 
-
 #sidebar {
   position: fixed;
   width: 250px;
@@ -33,7 +32,6 @@ h1{
   left: 0px;
   transition: 0.3s;
 }
-
 
 #sidebar.active {
   left: 0px;
@@ -66,7 +64,6 @@ h1{
   display: none;
 }
 
-
 .toggle-btn span {
   display: none;
   width: 25px;
@@ -87,12 +84,7 @@ h1{
 
 @media (max-width: 768px) {
   #sidebar {
-    position: fixed;
-    width: 250px;
-    height: 100%;
-    background: #1f1f1f;
     left: -250px;
-    transition: 0.3s;
   }
 
    h1 {
